@@ -1,0 +1,127 @@
+.aboutLeft {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+
+  @media (max-width: 1264px) {
+    width: 100%;
+  }
+
+  .who {
+    margin-bottom: 77px;
+  }
+
+  .who,
+  .believe {
+    width: fit-content;
+
+    h3 {
+      font-size: 18px;
+      font-family: Wesfy-Bold;
+      color: var(--heading);
+      margin-bottom: 24px;
+
+      @media (max-width: 1264px) {
+        color: var(--white);
+        margin-bottom: 32px;
+      }
+    }
+
+    > ul {
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      gap: 32px;
+
+      @media (max-width: 1500px) {
+        gap: 20px;
+        grid-template-columns: repeat(3, 250px);
+      }
+
+      @media (max-width: 1315px) {
+        gap: 16px;
+      }
+
+      @media (max-width: 1264px) {
+        display: block;
+      }
+
+      li {
+        @media (max-width: 1264px) {
+          margin-bottom: 40px;
+
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+        }
+
+        > a {
+          color: var(--black);
+          font-size: 16px;
+
+          @media (max-width: 1264px) {
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
+
+.aboutRight {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 38px 39px;
+  margin-left: 42px;
+
+  @media (max-width: 1264px) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 42px;
+  }
+
+  .review {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+
+    > p {
+      color: #7e7e7e;
+      font-size: 11px;
+      line-height: 1.6;
+      margin-left: 12px;
+      max-width: 304px;
+    }
+  }
+
+  .reviewDetails {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+
+    .reviewImg {
+      width: 45px;
+      height: 45px;
+      margin-right: 13px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .reviewInfo {
+      display: flex;
+      flex-direction: column;
+
+      > span {
+        color: var(--black);
+        font-size: 12px;
+
+        &:last-of-type {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
