@@ -10,7 +10,7 @@ const ClientLayout = ({ children }) => {
   const [open, setOpen] = useState(false);
 
   const buttonStyle = [
-    "hamburger",
+    "hamburger2",
     "hamburger--spin",
     open ? "is-active" : null,
   ];

@@ -18,7 +18,7 @@
   width: 100%;
   height: 100%;
   display: grid;
-  background-color: #ccc;
+  // background-color: #ccc;
   color: var(--grey);
 
   @media (max-width: 1272px) {
@@ -26,7 +26,8 @@
   }
 
   .hamburger_wrapper {
-    background: red;
+    background: #0202c6;
+
     width: 100%;
     display: flex;
     align-items: center;
