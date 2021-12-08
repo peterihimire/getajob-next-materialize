@@ -1,0 +1,126 @@
+.vacancies {
+  width: 100%;
+
+  h2 {
+    font-family: Wesfy-Medium;
+    font-size: 40px;
+    color: var(--heading);
+    margin-bottom: 72px;
+    text-align: center;
+
+    @media screen and (max-width: 700px) {
+      font-size: 32px;
+    }
+  }
+
+  .filters {
+    width: 100%;
+    margin-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    .filterGroup {
+      // width: 100%;
+      // max-width: 328px;
+      width: fit-content;
+      margin-right: 42px;
+      display: flex;
+      align-items: center;
+
+      &:nth-child(2) {
+        margin-right: 57px;
+      }
+
+      &:last-of-type {
+        margin-right: 0px;
+        width: fit-content;
+      }
+
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 16px;
+        margin-right: 0px;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+
+        &:nth-child(2) {
+          margin-right: 0px;
+          margin-bottom: 25px;
+        }
+      }
+
+      label {
+        display: initial;
+        color: var(--new-blue);
+        font-size: 19px;
+        margin-right: 13px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+
+        @media screen and (max-width: 1200px) {
+          margin-bottom: 10px;
+          margin-right: 0px;
+        }
+      }
+
+      .sortBox {
+        width: 255px;
+
+        @media screen and (max-width: 1200px) {
+          width: 100%;
+        }
+
+        &::after {
+          background: url("/images/selectdrop1.svg") no-repeat center;
+          width: 17px;
+          height: 17px;
+          transform: none;
+          top: 18px;
+        }
+
+        select {
+          // background: #f4f4f4 !important;
+          border: 1px solid rgba(30, 35, 72, 0.5);
+        }
+      }
+
+      > button {
+        background: var(--new-blue);
+        border-radius: 3px;
+        color: var(--white);
+        font-family: Proxima-Bold;
+        font-size: 16px;
+        border: 1px solid var(--new-blue);
+      }
+    }
+  }
+
+  .grid {
+    width: 80%;
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 284px));
+      justify-content: center;
+    }
+  }
+
+  .gridPaginate {
+    width: 100%;
+    margin-top: 71px;
+  }
+}

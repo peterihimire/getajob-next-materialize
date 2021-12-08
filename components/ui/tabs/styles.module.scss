@@ -1,0 +1,80 @@
+.tabs {
+  width: var(--full);
+  background: transparent;
+  height: auto;
+
+  .tabsHeader {
+    width: var(--full);
+    height: 50px;
+
+    .tabsHeaderList {
+      display: flex;
+      height: var(--full);
+      border-bottom: 1px solid var(--card-border);
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+
+      &.horizontalPadding {
+        padding: 0px 80px;
+
+        &::after {
+          content: "";
+          padding-right: 16px;
+        }
+
+        @media (max-width: 600px) {
+          padding: 0px 16px;
+        }
+      }
+
+      > li {
+        height: var(--full);
+        position: relative;
+
+        &.active {
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: var(--full);
+            height: 2px;
+            background: var(--primary);
+          }
+
+          > button {
+            color: var(--primary);
+
+            > .dot {
+              background: var(--orange);
+              display: block;
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              margin-right: 4px;
+            }
+          }
+        }
+
+        > button {
+          width: fit-content;
+          margin: 0 auto;
+          height: var(--full);
+          padding: 16px 32px;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          font-family: Noto-Medium;
+          position: relative;
+
+          > .dot {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

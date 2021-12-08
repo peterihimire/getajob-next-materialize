@@ -27,7 +27,7 @@ const ClientLayout = ({ children }) => {
   return (
     <div className={styles.dashboardLayout}>
       <Sidebar isOpen={open} />
-      <div className={styles.hamburger_wrapper}>
+      {/* <div className={styles.hamburger_wrapper}>
         <button
           type="button"
           aria-label="navigation button"
@@ -42,7 +42,7 @@ const ClientLayout = ({ children }) => {
             <span className="hamburger-inner"></span>
           </span>
         </button>
-      </div>
+      </div> */}
       <Backdrop
         open={open}
         clicked={() => {

@@ -1,0 +1,75 @@
+.card {
+  background: var(--white);
+  border: 1px solid #d9d6d6;
+  box-shadow: 0px 0px 5px 1px rgba(89, 89, 89, 0.1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 11px 21px 24px;
+
+  .cardHeader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(162, 152, 152, 0.33);
+      border-radius: 2px;
+      width: 38px;
+      height: 18px;
+      font-size: 10px;
+      color: var(--new-blue);
+      text-transform: uppercase;
+    }
+  }
+  .vacancyLink {
+    color: var(--black) !important;
+  }
+  .cardBody {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 34px;
+    white-space: pre-line;
+
+    h3 {
+      font-size: 14px;
+      font-family: Proxima-Bold;
+      color: var(--black);
+      margin-bottom: 9px;
+    }
+
+    p {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      color: var(--black);
+
+      span {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .cardFooter {
+    margin-top: auto;
+    border-top: 1px solid #d3d3d3;
+    padding-top: 18px;
+    display: flex;
+    align-items: baseline;
+    color: var(--black);
+
+    span {
+      width: 9px;
+      height: 9px;
+      background: var(--new-blue);
+      margin-right: 6px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
