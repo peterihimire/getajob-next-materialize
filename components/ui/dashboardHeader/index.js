@@ -60,9 +60,9 @@ const DashboardHeader = ({ isOpen, clicked }) => {
       </div>
 
       <div className={styles.dash_header__actions}>
-        <div className={styles.profile_img}>
+        {/* <div className={styles.profile_img}>
           <img src="" alt="profile" />
-        </div>
+        </div> */}
 
         <div className={styles.dropdown_wrapper}>
           <Link href="/profile">Peter</Link>
@@ -72,7 +72,13 @@ const DashboardHeader = ({ isOpen, clicked }) => {
           <button
             type="button"
             aria-label="navigation button"
-            onClick={clicked}
+            // onClick={clicked}
+            onClick={() => {
+              // setOpen(!open);
+              document.documentElement.classList.toggle("_fixed");
+              document.body.classList.toggle("_fixed");
+              clicked();
+            }}
             className={buttonStyle.join(" ")}
             // className={`hamburger2 hamburger--boring ${
             //   isOpen ? "is-active" : ""

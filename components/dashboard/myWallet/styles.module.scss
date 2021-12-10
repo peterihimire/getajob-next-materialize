@@ -1,0 +1,46 @@
+.walletInvestment {
+  width: 100%;
+
+  .walletContent {
+    background-color: #0202c6;
+    color: #fff;
+    border-radius: 16px;
+    height: 160px;
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 68%;
+    column-gap: 20px;
+  }
+  .right {
+    .grid {
+      // width: 80%;
+      // margin-top: 49px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px 20px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: var(--white);
+      border-radius: 16px;
+      height: 160px;
+      padding: 20px;
+
+      .investPortfolio {
+        background: linear-gradient(136.48deg, #e6edfe 3.14%, #dee4f5 98.63%);
+        border-radius: 8px;
+      }
+      .expectReturn {
+        background: #e6feea;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .tabsHeaderList{
+    justify-content: center;
+  }
+}
