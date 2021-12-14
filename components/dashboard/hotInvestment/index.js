@@ -20,8 +20,8 @@ const HotInvestment = () => {
           raisedAmt="2,000,000"
         />
         <DashboardCard
-          key="1"
-          id="1"
+          key="2"
+          id="2"
           src="/images/hot-investment-1.png"
           alt="img"
           title="Aklas real estate dual home"
@@ -32,8 +32,8 @@ const HotInvestment = () => {
           raisedAmt="2,000,000"
         />
         <DashboardCard
-          key="1"
-          id="1"
+          key="3"
+          id="3"
           src="/images/hot-investment-1.png"
           alt="img"
           title="Aklas real estate dual home"
@@ -44,8 +44,8 @@ const HotInvestment = () => {
           raisedAmt="2,000,000"
         />
         <DashboardCard
-          key="1"
-          id="1"
+          key="4"
+          id="4"
           src="/images/hot-investment-1.png"
           alt="img"
           title="Aklas real estate dual home"

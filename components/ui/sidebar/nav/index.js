@@ -81,12 +81,12 @@ const Nav = () => {
         </li>
 
         <li>
-          <li>
-            <ActiveLink href="/Menu">
-              <Careers />
-              <span>Menu Category</span>
-            </ActiveLink>
-          </li>
+          <ActiveLink href="/Menu">
+            <Careers />
+            <span>Menu Category</span>
+          </ActiveLink>
+        </li>
+        <li>
           <ActiveLink href="/Roles">
             <RoleManagement />
             <span>Roles</span>
